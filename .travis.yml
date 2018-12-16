@@ -6,4 +6,5 @@ before_install:
   - docker build -t nicemayi/docker-react -f Dockerfile.dev .
 
 scripts:
+  - sudo gem install bundler
   - docker run nicemayi/docker-react npm run test -- --coverage
